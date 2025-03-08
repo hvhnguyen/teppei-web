@@ -2,41 +2,45 @@ package com.teppei.kendo.teppei_kendo_shop.model.details;
 
 import java.util.Objects;
 
+import com.teppei.kendo.teppei_kendo_shop.enums.HandleLength;
+import com.teppei.kendo.teppei_kendo_shop.enums.HandleShape;
+import com.teppei.kendo.teppei_kendo_shop.enums.HandleSize;
+
 public class HandleDetails {
-	private String handleShape;
-	private String handleSize;
-	private String handleLength;
+	private HandleShape handleShape;
+	private HandleSize handleSize;
+	private HandleLength handleLength;
 	
 	public HandleDetails() {
 	}
-
-	public HandleDetails(String handleShape, String handleSize, String handleLength) {
+	
+	public HandleDetails(HandleShape handleShape, HandleSize handleSize, HandleLength handleLength) {
 		this.handleShape = handleShape;
 		this.handleSize = handleSize;
 		this.handleLength = handleLength;
 	}
-
-	public String getHandleShape() {
+	
+	public HandleShape getHandleShape() {
 		return handleShape;
 	}
 
-	public void setHandleShape(String handleShape) {
+	public void setHandleShape(HandleShape handleShape) {
 		this.handleShape = handleShape;
 	}
 
-	public String getHandleSize() {
+	public HandleSize getHandleSize() {
 		return handleSize;
 	}
 
-	public void setHandleSize(String handleSize) {
+	public void setHandleSize(HandleSize handleSize) {
 		this.handleSize = handleSize;
 	}
 
-	public String getHandleLength() {
+	public HandleLength getHandleLength() {
 		return handleLength;
 	}
 
-	public void setHandleLength(String handleLength) {
+	public void setHandleLength(HandleLength handleLength) {
 		this.handleLength = handleLength;
 	}
 
