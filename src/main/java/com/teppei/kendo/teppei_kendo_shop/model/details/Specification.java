@@ -3,7 +3,6 @@ package com.teppei.kendo.teppei_kendo_shop.model.details;
 import java.util.Objects;
 
 public class Specification {
-	private String size;
 	private String type;
 	private String feature;
 	private String material;
@@ -12,18 +11,9 @@ public class Specification {
 	}
 
 	public Specification(String size, String type, String feature, String material) {
-		this.size = size;
 		this.type = type;
 		this.feature = feature;
 		this.material = material;
-	}
-
-	public String getSize() {
-		return size;
-	}
-
-	public void setSize(String size) {
-		this.size = size;
 	}
 
 	public String getType() {
@@ -52,7 +42,7 @@ public class Specification {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(feature, material, size, type);
+		return Objects.hash(feature, material, type);
 	}
 
 	@Override
@@ -65,7 +55,7 @@ public class Specification {
 		}
 		Specification that = (Specification) o;
 		return Objects.equals(feature, that.feature) && Objects.equals(material, that.material)
-				&& Objects.equals(size, that.size) && Objects.equals(type, that.type);
+				 && Objects.equals(type, that.type);
 	}
 	
 }
